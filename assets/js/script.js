@@ -45,6 +45,11 @@ function setLang(l) {
   if (ta) ta.placeholder = ta.dataset[fr ? 'phFr' : 'phPt'];
 
   // swipe hint conteúdo já muda via data-lang no HTML
+
+  // GA4: track language switch
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'language_switch', { language: l });
+  }
 }
 
 
