@@ -331,4 +331,26 @@
 <footer role="contentinfo">
   <div class="container">
     <div class="footer-brand">Riko<span style="color:var(--orange)">.</span>Dev Studio</div>
-    <p clas
+    <p class="footer-copy" data-lang="fr">&copy; 2025 Riko Dev Studio &middot; <a href="privacidade.html">Politique de confidentialit&eacute;</a></p>
+    <p class="footer-copy" data-lang="pt">&copy; 2025 Riko Dev Studio &middot; <a href="privacidade.html">Pol&iacute;tica de Privacidade</a></p>
+  </div>
+</footer>
+
+<script>
+function setPrivLang(l) {
+  const pt = l === 'pt';
+  document.body.classList.toggle('pt', pt);
+  document.documentElement.lang = l;
+  document.getElementById('btn-fr').classList.toggle('active', !pt);
+  document.getElementById('btn-pt').classList.toggle('active', pt);
+  document.getElementById('hero-btn-fr').classList.toggle('active', !pt);
+  document.getElementById('hero-btn-pt').classList.toggle('active', pt);
+}
+// Auto-detect: se o index.html guardou preferência de idioma
+(function() {
+  const saved = sessionStorage.getItem('lang') || (navigator.language || '').toLowerCase();
+  if (saved.startsWith('pt')) setPrivLang('pt');
+})();
+</script>
+</body>
+</html>

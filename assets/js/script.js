@@ -46,6 +46,9 @@ function setLang(l) {
 
   // swipe hint conteúdo já muda via data-lang no HTML
 
+  // Guarda preferência para outras páginas (privacidade.html)
+  sessionStorage.setItem('lang', l);
+
   // GA4: track language switch
   if (typeof gtag !== 'undefined') {
     gtag('event', 'language_switch', { language: l });
