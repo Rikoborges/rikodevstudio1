@@ -26,8 +26,8 @@
 
 /* ── RESET ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; font-size: 17px; }
-body { font-family: 'Outfit', sans-serif; background: var(--cream); color: var(--navy); line-height: 1.6; overflow-x: hidden; }
+html { scroll-behavior: smooth; font-size: 17px; overflow-x: clip; }
+body { font-family: 'Outfit', sans-serif; background: var(--cream); color: var(--navy); line-height: 1.6; }
 img { max-width: 100%; display: block; }
 a { color: inherit; text-decoration: none; }
 
@@ -67,7 +67,7 @@ a { color: inherit; text-decoration: none; }
 @media (min-width: 768px) { .topbar-nav { display: flex; } }
 
 /* ── HERO ── */
-.hero { min-height: 100svh; background: var(--navy); display: flex; flex-direction: column; justify-content: center; padding: 6rem 1.5rem 4rem; position: relative; overflow: hidden; }
+.hero { min-height: 100vh; min-height: 100svh; background: var(--navy); display: flex; flex-direction: column; justify-content: center; padding: 6rem 1.5rem 4rem; position: relative; overflow: hidden; }
 .hero::before { content: ''; position: absolute; top: -150px; right: -150px; width: 600px; height: 600px; background: radial-gradient(circle, rgba(255,107,53,.13) 0%, transparent 68%); pointer-events: none; }
 .hero::after { content: ''; position: absolute; bottom: -100px; left: 5%; width: 400px; height: 400px; background: radial-gradient(circle, rgba(255,107,53,.06) 0%, transparent 70%); pointer-events: none; }
 .hero-inner { max-width: 680px; position: relative; z-index: 2; }
