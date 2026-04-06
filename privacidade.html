@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Politique de confidentialité | Riko Dev Studio</title>
+  <meta name="description" content="Politique de confidentialité et protection des données personnelles — Riko Dev Studio, Valence." />
+  <meta name="robots" content="noindex, follow" />
+  <link rel="canonical" href="https://rikodevstudio.com/privacidade.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    .priv-hero {
+      background: var(--navy);
+      padding: 6rem 1.5rem 3rem;
+      text-align: center;
+    }
+    .priv-hero h1 {
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-weight: 800;
+      font-size: clamp(1.8rem, 5vw, 3rem);
+      color: #fff;
+      letter-spacing: -.025em;
+      margin-bottom: .75rem;
+    }
+    .priv-hero p {
+      color: #a8b4c4;
+      font-size: .95rem;
+    }
+    .priv-body {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 5rem;
+    }
+    .priv-section {
+      margin-bottom: 2.5rem;
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid rgba(26,26,46,.1);
+    }
+    .priv-section:last-child { border-bottom: none; }
+    .priv-section h2 {
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-weight: 700;
+      font-size: 1.15rem;
+      color: var(--navy);
+      margin-bottom: .75rem;
+    }
+    .priv-section p, .priv-section li {
+      font-size: .92rem;
+      color: var(--gray);
+      line-height: 1.75;
+      margin-bottom: .5rem;
+    }
+    .priv-section ul {
+      padding-left: 1.2rem;
+      margin-bottom: .5rem;
+    }
+    .priv-section a {
+      color: #B8460F;
+      text-decoration: underline;
+    }
+    .priv-badge {
+      display: inline-block;
+      background: var(--cream-dark);
+      color: var(--navy);
+      font-size: .72rem;
+      font-weight: 700;
+      padding: .25rem .7rem;
+      border-radius: 100px;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+    .lang-toggle-priv {
+      display: flex;
+      justify-content: center;
+      gap: .5rem;
+      margin-top: 1rem;
+    }
+    .lang-toggle-priv button {
+      background: rgba(255,255,255,.1);
+      border: 1px solid rgba(255,255,255,.2);
+      color: #fff;
+      font-family: 'Outfit', sans-serif;
+      font-size: .8rem;
+      font-weight: 600;
+      padding: .4rem 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: .2s;
+    }
+    .lang-toggle-priv button.active {
+      background: #B8460F;
+      border-color: #B8460F;
+    }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      font-size: .88rem;
+      font-weight: 600;
+      color: #B8460F;
+      margin-bottom: 2rem;
+      text-decoration: none;
+    }
+    .back-link:hover { text-decoration: underline; }
+    /* FR visível por defeito — JS troca para PT se browser em português */
+    [data-lang="pt"] { display: none; }
+    body.pt [data-lang="fr"] { display: none; }
+    body.pt [data-lang="pt"] { display: block; }
+    /* garantir que divs principais são visíveis */
+    div[data-lang="fr"] { display: block; }
+    div[data-lang="pt"] { display: none; }
+    body.pt div[data-lang="fr"] { display: none; }
+    body.pt div[data-lang="pt"] { display: block; }
+  </style>
+</head>
+<body>
+
+<!-- TOPBAR simples -->
+<header class="topbar" role="banner">
+  <a href="index.html" class="brand">Riko<span>.</span>Dev</a>
+  <div class="topbar-right">
+    <div class="lang-sw" role="group">
+      <button class="lb" onclick="setPrivLang('fr')" id="btn-fr">FR</button>
+      <button class="lb" onclick="setPrivLang('pt')" id="btn-pt">PT</button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<div class="priv-hero">
+  <h1 data-lang="fr">Politique de confidentialité</h1>
+  <h1 data-lang="pt">Política de Privacidade</h1>
+  <p data-lang="fr">Dernière mise à jour : avril 2025</p>
+  <p data-lang="pt">Última atualização: abril 2025</p>
+  <div class="lang-toggle-priv">
+    <button onclick="setPrivLang('fr')" id="hero-btn-fr" class="active">Français</button>
+    <button onclick="setPrivLang('pt')" id="hero-btn-pt">Português</button>
+  </div>
+</div>
+
+<!-- CONTEÚDO -->
+<div class="priv-body">
+  <a href="index.html" class="back-link">← <span data-lang="fr">Retour au site</span><span data-lang="pt">Voltar ao site</span></a>
+
+  <!-- ── VERSÃO FRANCESA (RGPD) ── -->
+  <div data-lang="fr">
+
+    <div class="priv-section">
+      <span class="priv-badge">RGPD — Règlement (UE) 2016/679</span>
+      <h2>1. Responsable du traitement</h2>
+      <p>Riko Dev Studio — Auto-entrepreneur, Valence (26000), France<br>
+      Email : <a href="mailto:rikodevstudio@gmail.com">rikodevstudio@gmail.com</a><br>
+      Téléphone : +33 07 81 58 31 01</p>
+    </div>
+
+    <div class="priv-section">
+      <h2>2. Données collectées</h2>
+      <p>Nous collectons uniquement les données que vous nous fournissez volontairement via le formulaire de contact :</p>
+      <ul>
+        <li>Nom et prénom</li>
+        <li>Adresse email</li>
+        <li>Type de projet sélectionné</li>
+        <li>Message libre</li>
+      </ul>
+      <p>Aucune donnée sensible n'est collectée (santé, origine, opinions politiques, etc.).</p>
+    </div>
+
+    <div class="priv-section">
+      <h2>3. Finalité du traitement</h2>
+      <p>Les données collectées sont utilisées exclusivement pour :</p>
+      <ul>
+        <li>Répondre à vos demandes de contact et de devis</li>
+        <li>Assurer le suivi de notre relation commerciale</li>
+      </ul>
+      <p>Elles ne sont jamais utilisées à des fins commerciales, publicitaires ou cédées à des tiers.</p>
+    </div>
+
+    <div class="priv-section">
+      <h2>4. Base légale</h2>
+      <p>Le traitement est fondé sur votre <strong>consentement explicite</strong> (Art. 6.1.a du RGPD), exprimé lors de l'envoi du formulaire de contact.</p>
+    </div>
+
+    <div class="priv-section">
+      <h2>5. Durée de conservation</h2>
+      <p>Vos données sont conservées pendant <strong>3 ans</strong> à compter du dernier contact, conformément aux recommandations de la CNIL.</p>
+    </div>
+
+    <div class="priv-section">
+      <h2>6. Destinataires des données</h2>
+      <p>Vos données transitent via <strong>Formspree</strong> (formspree.io), service de traitement de formulaires basé aux États-Unis, avec garanties de conformité RGPD. Elles sont ensuite stockées uniquement dans notre messagerie professionnelle.</p>
+    </div>
+
+    <div class="priv-section">
+      <h2>7. Vos droits</h2>
+      <p>Conformément au RGPD, vous disposez des droits suivants :</p>
+      <ul>
+        <li><strong>Droit d'accès</strong> — obtenir une copie de vos données</li>
+        <li><strong>Droit de rectification</strong> — corriger des données inexactes</li>
+        <li><strong>Droit à l'effacement</strong> — demander la suppression de vos données</li>
+        <li><strong>Droit d'opposition</strong> — vous opposer au traitement</li>
+        <li><strong>Droit à la portabilité</strong> — recevoir vos données dans un format structuré</li>
+        <li><strong>Droit de retrait du consentement</strong> — à tout moment, sans préjudice</li>
+      </ul>
+      <p>Pour exercer ces droits, contactez-nous à <a href="mailto:rikodevstudio@gmail.com">rikodevstudio@gmail.com</a>. Nous répondons sous <strong>30 jours</strong>.</p>
+      <p>Vous pouvez également introduire une réclamation auprès de la <strong>CNIL</strong> : <a href="https://www.cnil.fr" target="_blank" rel="noopener">www.cnil.fr</a></p>
+    </div>
+
+    <div class="priv-section">
+      <h2>8. Cookies</h2>
+      <p>Ce site utilise des cookies strictement nécessaires au bon fonctionnement. Aucun cookie publicitaire ou de suivi tiers n'est utilisé.</p>
+      <ul>
+        <li><strong>cookie_consent</strong> — mémorise votre choix de cookies (durée : 12 mois)</li>
+        <li><strong>lang_pref</strong> — mémorise votre préférence de langue (durée : session)</li>
+      </ul>
+      <p>Vous pouvez gérer vos cookies via les paramètres de votre navigateur.</p>
+    </div>
+
+    <div class="priv-section">
+      <h2>9. Sécurité</h2>
+      <p>Le site utilise le protocole HTTPS. Les données de formulaire transitent de manière chiffrée via Formspree. Aucune donnée n'est stockée dans des bases de données en ligne exposées.</p>
+    </div>
+
+    <div class="priv-section">
+      <h2>10. Contact</h2>
+      <p>Pour toute question relative à cette politique :<br>
+      <a href="mailto:rikodevstudio@gmail.com">rikodevstudio@gmail.com</a> — Riko Dev Studio, Valence, France</p>
+    </div>
+
+  </div>
+
+  <!-- ── VERSÃO PORTUGUESA (LGPD + RGPD) ── -->
+  <div data-lang="pt">
+
+    <div class="priv-section">
+      <span class="priv-badge">LGPD — Lei nº 13.709/2018 + RGPD</span>
+      <h2>1. Responsável pelo tratamento</h2>
+      <p>Riko Dev Studio — Freelancer autónomo, Valence (26000), França<br>
+      Email: <a href="mailto:rikodevstudio@gmail.com">rikodevstudio@gmail.com</a><br>
+      Telefone: +33 07 81 58 31 01</p>
+    </div>
+
+    <div class="priv-section">
+      <h2>2. Dados recolhidos</h2>
+      <p>Recolhemos apenas os dados que você nos fornece voluntariamente através do formulário de contacto:</p>
+      <ul>
+        <li>Nome completo</li>
+        <li>Endereço de email</li>
+        <li>Tipo de projeto selecionado</li>
+        <li>Mensagem livre</li>
+      </ul>
+      <p>Não são recolhidos dados sensíveis (saúde, origem étnica, opiniões políticas, etc.).</p>
+    </div>
+
+    <div class="priv-section">
+      <h2>3. Finalidade do tratamento</h2>
+      <p>Os dados recolhidos são utilizados exclusivamente para:</p>
+      <ul>
+        <li>Responder aos seus pedidos de contacto e orçamento</li>
+        <li>Assegurar o acompanhamento da nossa relação comercial</li>
+      </ul>
+      <p>Nunca são utilizados para fins comerciais, publicitários ou cedidos a terceiros.</p>
+    </div>
+
+    <div class="priv-section">
+      <h2>4. Base legal</h2>
+      <p>O tratamento baseia-se no seu <strong>consentimento explícito</strong> (Art. 7º da LGPD / Art. 6.1.a do RGPD), expresso no momento do envio do formulário de contacto.</p>
+    </div>
+
+    <div class="priv-section">
+      <h2>5. Período de conservação</h2>
+      <p>Os seus dados são conservados durante <strong>3 anos</strong> a partir do último contacto, em conformidade com as boas práticas da ANPD e da CNIL.</p>
+    </div>
+
+    <div class="priv-section">
+      <h2>6. Destinatários dos dados</h2>
+      <p>Os seus dados transitam via <strong>Formspree</strong> (formspree.io), serviço de processamento de formulários com garantias de conformidade RGPD. São depois armazenados apenas na nossa caixa de email profissional.</p>
+    </div>
+
+    <div class="priv-section">
+      <h2>7. Os seus direitos</h2>
+      <p>Nos termos da LGPD e do RGPD, tem os seguintes direitos:</p>
+      <ul>
+        <li><strong>Acesso</strong> — obter uma cópia dos seus dados</li>
+        <li><strong>Retificação</strong> — corrigir dados incorretos</li>
+        <li><strong>Eliminação</strong> — solicitar a exclusão dos seus dados</li>
+        <li><strong>Oposição</strong> — opor-se ao tratamento</li>
+        <li><strong>Portabilidade</strong> — receber os dados em formato estruturado</li>
+        <li><strong>Revogação do consentimento</strong> — a qualquer momento, sem prejuízo</li>
+      </ul>
+      <p>Para exercer estes direitos, contacte-nos em <a href="mailto:rikodevstudio@gmail.com">rikodevstudio@gmail.com</a>. Respondemos em <strong>30 dias</strong>.</p>
+      <p>Pode também apresentar reclamação à <strong>ANPD</strong> (Brasil): <a href="https://www.gov.br/anpd" target="_blank" rel="noopener">www.gov.br/anpd</a> ou à <strong>CNIL</strong> (França): <a href="https://www.cnil.fr" target="_blank" rel="noopener">www.cnil.fr</a></p>
+    </div>
+
+    <div class="priv-section">
+      <h2>8. Cookies</h2>
+      <p>Este site utiliza apenas cookies estritamente necessários ao funcionamento. Nenhum cookie publicitário ou de rastreamento de terceiros é utilizado.</p>
+      <ul>
+        <li><strong>cookie_consent</strong> — memoriza a sua escolha de cookies (duração: 12 meses)</li>
+        <li><strong>lang_pref</strong> — memoriza a preferência de idioma (duração: sessão)</li>
+      </ul>
+      <p>Pode gerir os cookies através das definições do seu browser.</p>
+    </div>
+
+    <div class="priv-section">
+      <h2>9. Segurança</h2>
+      <p>O site utiliza protocolo HTTPS. Os dados do formulário transitam de forma encriptada via Formspree. Nenhum dado é armazenado em bases de dados online expostas.</p>
+    </div>
+
+    <div class="priv-section">
+      <h2>10. Contacto</h2>
+      <p>Para qualquer questão relativa a esta política:<br>
+      <a href="mailto:rikodevstudio@gmail.com">rikodevstudio@gmail.com</a> — Riko Dev Studio, Valence, França</p>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- FOOTER simples -->
+<footer role="contentinfo">
+  <div class="container">
+    <div class="footer-brand">Riko<span style="color:var(--orange)">.</span>Dev Studio</div>
+    <p class="footer-text">
+      &copy; 2025 Riko Dev Studio &middot; Valence, France &middot · <a href="mailto:rikodevstudio@gmail.com">rikodevstudio@gmail.com</a>
+    </p>
+  </div>
+</footer>
+
+<script>
+function setPrivLang(l) {
+  const pt = l === 'pt';
+  document.body.classList.toggle('pt', pt);
+  document.documentElement.lang = l;
+  document.getElementById('btn-fr').classList.toggle('active', !pt);
+  document.getElementById('btn-pt').classList.toggle('active', pt);
+  document.getElementById('hero-btn-fr').classList.toggle('active', !pt);
+  document.getElementById('hero-btn-pt').classList.toggle('active', pt);
+  document.title = pt
+    ? 'Politica de Privacidade | Riko Dev Studio'
+    : 'Politique de confidentialite | Riko Dev Studio';
+}
+if ((navigator.language || '').startsWith('pt')) setPrivLang('pt');
+else setPrivLang('fr');
+</script>
+</body>
+</html>

@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Création site web Valence (26) | Riko Dev Studio — Développeur web freelance</title>
+  <meta name="description" content="Développeur web freelance à Valence, Drôme. Sites modernes, rapides et accessibles pour petits commerces et professionnels. Devis gratuit en 48h." />
+  <meta name="keywords" content="création site web Valence, développeur web Valence, site internet Drôme, développeur freelance Valence 26" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://rikodevstudio.com/" />
+  <meta name="geo.region" content="FR-26" />
+  <meta name="geo.placename" content="Valence, Drôme, France" />
+  <meta name="geo.position" content="44.9334;4.8924" />
+  <meta name="ICBM" content="44.9334, 4.8924" />
+  <link rel="alternate" hreflang="fr" href="https://rikodevstudio.com/" />
+  <link rel="alternate" hreflang="pt" href="https://rikodevstudio.com/" />
+  <link rel="alternate" hreflang="x-default" href="https://rikodevstudio.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://rikodevstudio.com/" />
+  <meta property="og:title" content="Riko Dev Studio — Sites qui vendent | Sites que vendem" />
+  <meta property="og:description" content="Développeur web freelance à Valence. Sites rapides, modernes et accessibles." />
+  <meta property="og:image" content="https://rikodevstudio.com/images/og-image.jpg" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Riko Dev Studio","url":"https://rikodevstudio.com","email":"rikodevstudio@gmail.com","telephone":"+33781583101","description":"Développeur web freelance à Valence, Drôme.","priceRange":"€€","availableLanguage":["French","Portuguese","English"],"areaServed":[{"@type":"City","name":"Valence"},{"@type":"City","name":"Romans-sur-Isère"},{"@type":"AdministrativeArea","name":"Drôme"},{"@type":"AdministrativeArea","name":"Ardèche"}],"address":{"@type":"PostalAddress","addressLocality":"Valence","postalCode":"26000","addressRegion":"Drôme","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":44.9334,"longitude":4.8924},"review":[{"@type":"Review","author":{"@type":"Person","name":"Gabi Kaoana"},"reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},"reviewBody":"O site ficou muito bonito e cheio de informacoes"},{"@type":"Review","author":{"@type":"Person","name":"Cinthia Ribeiro"},"reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},"reviewBody":"Ficou elegante e tira duvidas das clientes"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5","reviewCount":"2"}}</script>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<a href="#main" class="skip-link">
+  <span data-lang="pt">Ir ao conteudo</span>
+  <span data-lang="fr">Aller au contenu</span>
+</a>
+
+<header class="topbar" role="banner">
+  <a href="#" class="brand">Riko<span>.</span>Dev</a>
+  <nav class="topbar-nav">
+    <a href="#portfolio" data-lang="pt">Projetos</a>
+    <a href="#portfolio" data-lang="fr">Projets</a>
+    <a href="#processo" data-lang="pt">Como funciona</a>
+    <a href="#processo" data-lang="fr">Comment ca marche</a>
+    <a href="#contacto" data-lang="pt">Contacto</a>
+    <a href="#contacto" data-lang="fr">Contact</a>
+  </nav>
+  <div class="topbar-right">
+    <div class="lang-sw" role="group">
+      <button class="lb active" onclick="setLang('pt')">PT</button>
+      <button class="lb" onclick="setLang('fr')">FR</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- 1. HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="badge">
+      <span class="badge-dot" aria-hidden="true"></span>
+      <span data-lang="pt">Disponivel para novos projetos</span>
+      <span data-lang="fr">Disponible pour nouveaux projets</span>
+    </div>
+    <!-- Uma só h1 — o JS troca o textContent via setLang() -->
+    <h1 id="hero-title">Seu negocio merece <em>ser visto.</em></h1>
+    <p class="hero-sub" data-lang="pt">Crio sites rapidos e modernos que atraem clientes de verdade.</p>
+    <p class="hero-sub" data-lang="fr">Je cree des sites rapides et modernes qui attirent de vrais clients.</p>
+    <div class="hero-actions">
+      <a href="#contacto" class="btn btn-primary">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        <span data-lang="pt">Falar agora</span>
+        <span data-lang="fr">Parlons-en</span>
+      </a>
+      <a href="#portfolio" class="btn btn-ghost">
+        <span data-lang="pt">Ver projetos</span>
+        <span data-lang="fr">Voir projets</span>
+      </a>
+    </div>
+  </div>
+  <div class="scroll-hint" aria-hidden="true"><div class="scroll-arrow"></div></div>
+</section>
+
+<!-- 2. IMPACTO -->
+<section class="impacto">
+  <div class="container">
+    <p class="slabel reveal"><span data-lang="pt">O que voce esta perdendo</span><span data-lang="fr">Ce que vous perdez</span></p>
+    <h2 class="stitle reveal"><span data-lang="pt">Sem site, o prejuizo e real.</span><span data-lang="fr">Sans site, la perte est reelle.</span></h2>
+    <div class="impact-grid">
+      <article class="impact-card reveal d1">
+        <div class="impact-num" data-target="97" data-suffix="%">0%</div>
+        <p class="impact-text" data-lang="pt">pesquisam online antes de comprar localmente</p>
+        <p class="impact-text" data-lang="fr">cherchent en ligne avant d'acheter localement</p>
+        <p class="impact-src">Google Consumer Insights 2024</p>
+      </article>
+      <article class="impact-card reveal d2">
+        <div class="impact-num" data-target="75" data-suffix="%">0%</div>
+        <p class="impact-text" data-lang="pt">julgam a credibilidade de um negocio pelo site</p>
+        <p class="impact-text" data-lang="fr">jugent la credibilite d'une entreprise via son site</p>
+        <p class="impact-src">Stanford Web Credibility Project</p>
+      </article>
+      <article class="impact-card reveal d3">
+        <div class="impact-num" data-target="2.8" data-suffix="x">0x</div>
+        <p class="impact-text" data-lang="pt">mais contatos para negocios com site vs. sem presenca</p>
+        <p class="impact-text" data-lang="fr">plus de contacts pour les entreprises avec site vs. sans</p>
+        <p class="impact-src">BPI France 2024</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 3. PORTFOLIO -->
+<section class="portfolio" id="portfolio">
+  <div class="container">
+    <p class="slabel reveal"><span data-lang="pt">Projetos reais</span><span data-lang="fr">Projets reels</span></p>
+    <h2 class="stitle reveal"><span data-lang="pt">Sites que ja entregamos.</span><span data-lang="fr">Sites deja livres.</span></h2>
+    <p class="ssub reveal">
+      <span data-lang="pt">Cada projeto resolve um problema real.</span>
+      <span data-lang="fr">Chaque projet resout un probleme reel.</span>
+    </p>
+    <div class="portfolio-grid">
+
+      <article class="pc reveal d1">
+        <div class="pc-thumb">
+          <img src="assets/images/gabi1.webp" alt="Site Gabi Kaoana" loading="lazy" onerror="this.style.display='none'" />
+          <span class="pc-tag">Blog / Personal</span>
+        </div>
+        <div class="pc-body">
+          <h3>Gabi Kaoana</h3>
+          <p class="pc-result" data-lang="pt">Presenca digital profissional estabelecida</p>
+          <p class="pc-result" data-lang="fr">Presence digitale professionnelle etablie</p>
+          <p class="pc-desc" data-lang="pt">Blog com filtros, SEO 100/100 e deploy automatizado. Performance e acessibilidade maximos.</p>
+          <p class="pc-desc" data-lang="fr">Blog avec filtres, SEO 100/100 et deploiement automatise. Performance et accessibilite maximales.</p>
+          <a href="https://gabikaoana.vercel.app/" target="_blank" rel="noopener noreferrer" class="pc-link"><span data-lang="pt">Ver projeto</span><span data-lang="fr">Voir projet</span> &rarr;</a>
+        </div>
+      </article>
+
+      <article class="pc reveal d2">
+        <div class="pc-thumb">
+          <img src="assets/images/le parc.jpg" alt="Site Le Parc" loading="lazy" onerror="this.style.display='none'" />
+          <span class="pc-tag">Restaurant / Bar</span>
+        </div>
+        <div class="pc-body">
+          <h3>Le Parc</h3>
+          <p class="pc-result" data-lang="pt">Menu digital em 3 idiomas</p>
+          <p class="pc-result" data-lang="fr">Menu digital en 3 langues</p>
+          <p class="pc-desc" data-lang="pt">Menu multilingue para bar em Valence. Acessivel por QR code, sem app.</p>
+          <p class="pc-desc" data-lang="fr">Menu multilingue pour bar a Valence. Accessible via QR code, sans app.</p>
+          <a href="https://le-parc.vercel.app/" target="_blank" rel="noopener noreferrer" class="pc-link"><span data-lang="pt">Ver projeto</span><span data-lang="fr">Voir projet</span> &rarr;</a>
+        </div>
+      </article>
+
+      <article class="pc reveal d3">
+        <div class="pc-thumb">
+          <img src="assets/images/cinthia1.webp" alt="Site Cinthia Ribeiro" loading="lazy" onerror="this.style.display='none'" />
+          <span class="pc-tag">Estetica / Beaute</span>
+        </div>
+        <div class="pc-body">
+          <h3>Cinthia Ribeiro</h3>
+          <p class="pc-result">100/100 Lighthouse</p>
+          <p class="pc-desc" data-lang="pt">Site de estetica com galeria before/after e identidade visual completa.</p>
+          <p class="pc-desc" data-lang="fr">Site beaute avec galerie avant/apres et identite visuelle complete.</p>
+          <a href="https://cinthia-ribeiro.vercel.app/" target="_blank" rel="noopener noreferrer" class="pc-link"><span data-lang="pt">Ver projeto</span><span data-lang="fr">Voir projet</span> &rarr;</a>
+        </div>
+      </article>
+
+      <!--
+  ══════════════════════════════════════════
+  CARD MAISON LAME — adiciona dentro de
+  <div class="portfolio-grid"> no index.html
+  DEPOIS dos 3 cards existentes.
+
+  Foto: coloca images/maison-lame.jpg
+  ══════════════════════════════════════════
+-->
+
+<article class="pc reveal d1">
+  <div class="pc-thumb">
+    <img
+      src="/assets/images/maison-lame.jpg"
+      alt="Site Maison Lame — Barbershop Valence"
+      loading="lazy"
+      onerror="this.style.display='none'"
+    />
+    <span class="pc-tag">Barbershop · Valence</span>
+  </div>
+  <div class="pc-body">
+    <h3>Maison Lame</h3>
+    <p class="pc-result" data-lang="pt">&#128205; Presenca premium no digital</p>
+    <p class="pc-result" data-lang="fr">&#128205; Presence premium sur le digital</p>
+    <p class="pc-desc" data-lang="pt">Site de barbearia premium em Valence. Design editorial, reserva de horario e identidade visual de alto nivel.</p>
+    <p class="pc-desc" data-lang="fr">Site barbershop premium a Valence. Design editorial, reservation de creneau et identite visuelle haut de gamme.</p>
+    <!-- ↓ actualiza com o link real quando estiver online -->
+    <a href="#" target="_blank" rel="noopener noreferrer" class="pc-link">
+      <span data-lang="pt">Ver projeto</span>
+      <span data-lang="fr">Voir projet</span> &rarr;
+    </a>
+  </div>
+</article>
+
+    </div>
+  </div>
+
+</section>
+
+<!-- 4. DEPOIMENTOS -->
+<section class="depos">
+  <div class="container">
+    <p class="slabel reveal"><span data-lang="pt">O que dizem</span><span data-lang="fr">Ce qu'ils disent</span></p>
+    <h2 class="stitle stitle-light reveal">
+      <span data-lang="pt">Clientes reais. Palavras deles.</span>
+      <span data-lang="fr">Clients reels. Leurs mots.</span>
+    </h2>
+    <div class="carousel-wrap reveal" id="carousel">
+      <div class="carousel-track" id="carouselTrack">
+
+        <div class="depo-card">
+          <div class="depo-header">
+            <img src="assets/images/gabi.webp" alt="Gabi Kaoana" class="depo-photo" loading="lazy" />
+            <div>
+              <div class="depo-name">Gabi Kaoana</div>
+              <div class="depo-role">Blog &middot; Personal</div>
+            </div>
+            <div class="depo-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          </div>
+          <div class="depo-quote" aria-hidden="true">&ldquo;</div>
+          <p class="depo-text" data-lang="pt">O site ficou muito bonito e cheio de informacoes &mdash; ate mesmo com blog!</p>
+          <p class="depo-text" data-lang="fr">Le site est vraiment beau et plein d'informations &mdash; avec meme un blog!</p>
+        </div>
+
+        <div class="depo-card">
+          <div class="depo-header">
+            <img src="assets/images/cinthia.webp" alt="Cinthia Ribeiro" class="depo-photo" loading="lazy" />
+            <div>
+              <div class="depo-name">Cinthia Ribeiro</div>
+              <div class="depo-role" data-lang="pt">Estetica &middot; Brasil</div>
+              <div class="depo-role" data-lang="fr">Beaute &middot; Bresil</div>
+            </div>
+            <div class="depo-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          </div>
+          <div class="depo-quote" aria-hidden="true">&ldquo;</div>
+          <p class="depo-text" data-lang="pt">Ficou elegante, tira duvidas das clientes e conta um pouco sobre o que eu faco.</p>
+          <p class="depo-text" data-lang="fr">C'est elegant, ca repond aux questions de mes clientes et explique ce que je fais.</p>
+        </div>
+
+      </div>
+      <div class="carousel-dots">
+        <button class="dot active" onclick="goToSlide(0)" aria-label="Depoimento 1"></button>
+        <button class="dot" onclick="goToSlide(1)" aria-label="Depoimento 2"></button>
+      </div>
+      <p class="swipe-hint" id="swipeHint">
+        <span data-lang="pt">deslize para ver mais &rarr;</span>
+        <span data-lang="fr">glissez pour voir plus &rarr;</span>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- 5. CTA MID -->
+<div class="cta-mid">
+  <h3 data-lang="pt">Gostou do que viu?</h3>
+  <h3 data-lang="fr">Vous aimez ce que vous voyez?</h3>
+  <p data-lang="pt">Conversa rapida e gratuita. Sem compromisso.</p>
+  <p data-lang="fr">Discussion rapide et gratuite. Sans engagement.</p>
+  <a href="#contacto" class="btn btn-primary">
+    <span data-lang="pt">Pedir orcamento gratis</span>
+    <span data-lang="fr">Demander un devis gratuit</span>
+  </a>
+</div>
+
+<!-- 6. PROCESSO -->
+<section class="processo" id="processo">
+  <div class="container">
+    <p class="slabel reveal"><span data-lang="pt">Como funciona</span><span data-lang="fr">Comment ca marche</span></p>
+    <h2 class="stitle stitle-light reveal">
+      <span data-lang="pt">Do zero ao online em 4 passos.</span>
+      <span data-lang="fr">De zero a en ligne en 4 etapes.</span>
+    </h2>
+    <p class="ssub ssub-light reveal">
+      <span data-lang="pt">Clique para avançar cada etapa.</span>
+      <span data-lang="fr">Cliquez pour avancer chaque etape.</span>
+    </p>
+
+    <div class="stepper-track reveal">
+
+      <!-- barra de progresso desktop -->
+      <div class="stepper-bar" aria-hidden="true">
+        <div class="stepper-bar-fill" id="stepperFill"></div>
+      </div>
+
+      <!-- dots de navegação -->
+      <div class="stepper-dots" role="tablist" aria-label="Passos do processo">
+        <button class="stepper-dot active" onclick="goToStep(0)" aria-label="Passo 1" role="tab"></button>
+        <button class="stepper-dot" onclick="goToStep(1)" aria-label="Passo 2" role="tab"></button>
+        <button class="stepper-dot" onclick="goToStep(2)" aria-label="Passo 3" role="tab"></button>
+        <button class="stepper-dot" onclick="goToStep(3)" aria-label="Passo 4" role="tab"></button>
+      </div>
+
+      <!-- cards -->
+      <div class="stepper-cards" id="stepperCards">
+
+        <article class="step active" data-step="0">
+          <div class="step-num">01</div>
+          <h3 data-lang="pt">Conversa gratis</h3><h3 data-lang="fr">Conversation gratuite</h3>
+          <p data-lang="pt">Entendo seu negocio e seus clientes. Sem compromisso, sem custo.</p>
+          <p data-lang="fr">Je comprends votre activite et vos clients. Sans engagement, sans frais.</p>
+          <span class="step-badge" data-lang="pt">30 min &middot; Gratis</span>
+          <span class="step-badge" data-lang="fr">30 min &middot; Gratuit</span>
+        </article>
+
+        <article class="step" data-step="1">
+          <div class="step-num">02</div>
+          <h3 data-lang="pt">Proposta clara</h3><h3 data-lang="fr">Devis clair</h3>
+          <p data-lang="pt">Prazo, preco e entregaveis detalhados. Voce sabe tudo antes de decidir.</p>
+          <p data-lang="fr">Delai, prix et livrables detailles. Vous savez tout avant de decider.</p>
+          <span class="step-badge" data-lang="pt">Em 48h</span>
+          <span class="step-badge" data-lang="fr">En 48h</span>
+        </article>
+
+        <article class="step" data-step="2">
+          <div class="step-num">03</div>
+          <h3 data-lang="pt">Construimos juntos</h3><h3 data-lang="fr">On construit ensemble</h3>
+          <p data-lang="pt">Conversamos em cada etapa. Voce acompanha e da feedback. Sem surpresas.</p>
+          <p data-lang="fr">On discute a chaque etape. Vous suivez et donnez votre avis. Sans surprises.</p>
+          <span class="step-badge" data-lang="pt">7 a 14 dias</span>
+          <span class="step-badge" data-lang="fr">7 a 14 jours</span>
+        </article>
+
+        <article class="step" data-step="3">
+          <div class="step-num">04</div>
+          <h3 data-lang="pt">Suporte pos-entrega</h3><h3 data-lang="fr">Support apres livraison</h3>
+          <p data-lang="pt">Apos o lancamento, disponivel para ajustes e manutencao. Voce nao fica sozinho.</p>
+          <p data-lang="fr">Apres le lancement, disponible pour ajustements et maintenance. Vous n'etes pas seul.</p>
+          <span class="step-badge" data-lang="pt">Resposta em 24h</span>
+          <span class="step-badge" data-lang="fr">Reponse sous 24h</span>
+        </article>
+
+      </div>
+
+      <!-- navegação anterior / próximo -->
+      <div class="stepper-nav">
+        <button class="stepper-btn" id="stepPrev" onclick="stepMove(-1)" disabled aria-label="Passo anterior">
+          ← <span data-lang="pt">Anterior</span><span data-lang="fr">Precedent</span>
+        </button>
+        <span class="stepper-counter" id="stepCounter">1 / 4</span>
+        <button class="stepper-btn stepper-btn-next" id="stepNext" onclick="stepMove(1)" aria-label="Proximo passo">
+          <span data-lang="pt">Proximo</span><span data-lang="fr">Suivant</span> →
+        </button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- 7. SOBRE -->
+<section class="sobre" id="sobre">
+  <div class="container">
+    <div class="sobre-grid">
+      <div class="avatar-wrap reveal">
+        <div class="avatar">
+          <img src="assets/images/riko.jpg" alt="Riko Dev freelance Valence" loading="lazy" onerror="this.style.display='none'" />
+        </div>
+        <div class="stats-grid">
+          <div class="stat"><div class="stat-num">5+</div><div class="stat-label" data-lang="pt">Projetos</div><div class="stat-label" data-lang="fr">Projets</div></div>
+          <div class="stat"><div class="stat-num">2</div><div class="stat-label" data-lang="pt">Paises</div><div class="stat-label" data-lang="fr">Pays</div></div>
+          <div class="stat"><div class="stat-num">100</div><div class="stat-label">SEO</div></div>
+          <div class="stat"><div class="stat-num">3</div><div class="stat-label" data-lang="pt">Idiomas</div><div class="stat-label" data-lang="fr">Langues</div></div>
+        </div>
+      </div>
+      <div>
+        <p class="slabel reveal"><span data-lang="pt">Quem sou</span><span data-lang="fr">Qui suis-je</span></p>
+        <h2 class="stitle reveal">
+          <span data-lang="pt">Dev freelance em Valence, Franca.</span>
+          <span data-lang="fr">Dev freelance a Valence, France.</span>
+        </h2>
+        <p class="ssub reveal" style="margin-bottom:1rem">
+          <span data-lang="pt">Trabalho com pequenos negocios e profissionais que precisam de uma presenca online real.</span>
+          <span data-lang="fr">Je travaille avec les petits commerces et professionnels qui ont besoin d'une vraie presence en ligne.</span>
+        </p>
+        <p class="sobre-note reveal">
+          <span data-lang="pt">Projetos realizados na Franca e no Brasil &middot; Falo PT &middot; FR &middot; EN</span>
+          <span data-lang="fr">Projets realises en France et au Bresil &middot; Je parle PT &middot; FR &middot; EN</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. FAQ -->
+<section class="faq">
+  <div class="container">
+    <p class="slabel reveal"><span data-lang="pt">Perguntas frequentes</span><span data-lang="fr">Questions frequentes</span></p>
+    <h2 class="stitle reveal"><span data-lang="pt">Tudo que voce quer saber.</span><span data-lang="fr">Tout ce que vous voulez savoir.</span></h2>
+    <div class="faq-list reveal">
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+          <span class="faq-q-text" data-lang="pt">Quanto custa um site?</span>
+          <span class="faq-q-text" data-lang="fr">Combien coute un site web?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          <span data-lang="pt">Cada projeto e diferente. Numa conversa rapida e gratuita, entendo o que precisa e envio uma proposta detalhada em 48h — sem compromisso.</span>
+          <span data-lang="fr">Chaque projet est different. Lors d'une discussion rapide et gratuite, je comprends vos besoins et envoie un devis detaille en 48h — sans engagement.</span>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+          <span class="faq-q-text" data-lang="pt">Quanto tempo demora?</span>
+          <span class="faq-q-text" data-lang="fr">Combien de temps ca prend?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          <span data-lang="pt">Landing page: 7 dias. Site completo: 10-14 dias. Sempre com prazo definido antes de comecar.</span>
+          <span data-lang="fr">Landing page: 7 jours. Site complet: 10-14 jours. Toujours avec delai defini avant de commencer.</span>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+          <span class="faq-q-text" data-lang="pt">E se eu nao gostar do resultado?</span>
+          <span class="faq-q-text" data-lang="fr">Et si je n'aime pas le resultat?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          <span data-lang="pt">Antes de codar, conversamos sobre visual, estrutura e objetivos. Durante o projeto, voce acompanha cada etapa. O resultado e construido junto.</span>
+          <span data-lang="fr">Avant de coder, on discute du visuel, de la structure et des objectifs. Pendant le projet, vous suivez chaque etape. Le resultat est construit ensemble.</span>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+          <span class="faq-q-text" data-lang="pt">Preciso saber de tecnologia?</span>
+          <span class="faq-q-text" data-lang="fr">Dois-je connaitre la technique?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          <span data-lang="pt">Nao. Cuido de tudo: dominio, hospedagem, emails, Google Analytics. Voce foca no seu negocio.</span>
+          <span data-lang="fr">Non. Je m'occupe de tout: domaine, hebergement, emails, Google Analytics. Vous vous concentrez sur votre activite.</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- 9. FORMULARIO -->
+<section class="formulario" id="contacto">
+  <div class="container">
+    <p class="slabel reveal"><span data-lang="pt">Contacto</span><span data-lang="fr">Contact</span></p>
+    <h2 class="stitle reveal"><span data-lang="pt">Vamos conversar.</span><span data-lang="fr">Discutons ensemble.</span></h2>
+    <p class="ssub reveal">
+      <span data-lang="pt">Prefere escrever? Respondo em ate 24h.</span>
+      <span data-lang="fr">Vous preferez ecrire? Je reponds sous 24h.</span>
+    </p>
+    <div class="form-wrap reveal">
+
+      <div class="form-success" id="formSuccess">
+        <div class="form-success-icon">&#10003;</div>
+        <p class="form-success-text" data-lang="pt">Mensagem enviada! Respondo em ate 24h.</p>
+        <p class="form-success-text" data-lang="fr">Message envoye! Je reponds sous 24h.</p>
+      </div>
+
+      <form id="contactForm" action="https://formspree.io/f/mlgpydeo" method="POST" novalidate>
+        <div class="field">
+          <label for="fname" id="lbl-name" data-pt="Seu nome *" data-fr="Votre nom *">Seu nome *</label>
+          <input type="text" id="fname" name="name" required autocomplete="name" />
+        </div>
+        <div class="field">
+          <label for="femail" id="lbl-email" data-pt="Seu email *" data-fr="Votre email *">Seu email *</label>
+          <input type="email" id="femail" name="email" required autocomplete="email" />
+        </div>
+        <div class="field">
+          <label for="fassunto" id="lbl-assunto" data-pt="Tipo de projeto" data-fr="Type de projet">Tipo de projeto</label>
+          <select id="fassunto" name="assunto">
+            <option value="" disabled selected data-pt="Selecione..." data-fr="Selectionnez...">Selecione...</option>
+            <option value="landing"    data-pt="Landing page" data-fr="Landing page">Landing page</option>
+            <option value="site"       data-pt="Site completo" data-fr="Site complet">Site completo</option>
+            <option value="manutencao" data-pt="Manutencao de site existente" data-fr="Maintenance de site existant">Manutencao de site existente</option>
+            <option value="outro"      data-pt="Outro / Nao sei ainda" data-fr="Autre / Je ne sais pas encore">Outro / Nao sei ainda</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="fmsg" id="lbl-msg" data-pt="Mensagem *" data-fr="Message *">Mensagem *</label>
+          <textarea id="fmsg" name="message" required
+            data-ph-pt="Fale um pouco sobre seu negocio e o que precisa..."
+            data-ph-fr="Parlez-moi de votre activite et de ce dont vous avez besoin..."
+            placeholder="Fale um pouco sobre seu negocio e o que precisa..."></textarea>
+        </div>
+        <input type="hidden" name="_subject" value="Novo contacto - Riko Dev Studio" />
+        <input type="hidden" name="_language" id="formLang" value="pt" />
+        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          <span data-lang="pt">Enviar mensagem</span>
+          <span data-lang="fr">Envoyer le message</span>
+        </button>
+      </form>
+
+      <div class="form-or">
+        <span data-lang="pt">ou fale diretamente</span>
+        <span data-lang="fr">ou contactez directement</span>
+      </div>
+
+      <a href="https://wa.me/33781583101" target="_blank" rel="noopener noreferrer"
+        class="btn" style="width:100%;justify-content:center;background:rgba(26,26,46,.06);color:var(--navy);border:1.5px solid rgba(26,26,46,.15)">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.554 4.103 1.523 5.824L.057 23.857a.5.5 0 0 0 .614.614l6.033-1.466A11.944 11.944 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.846 0-3.574-.49-5.063-1.345l-.363-.21-3.763.914.932-3.642-.23-.374A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        WhatsApp - +33 07 81 58 31 01
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- 10. CTA FINAL -->
+<section class="cta-final">
+  <h2 data-lang="pt">Pronto para ter<br>seu site no ar?</h2>
+  <h2 data-lang="fr">Pret a avoir<br>votre site en ligne?</h2>
+  <p data-lang="pt">Conversa rapida, sem compromisso. Proposta em 48h.</p>
+  <p data-lang="fr">Discussion rapide, sans engagement. Devis en 48h.</p>
+  <a href="https://wa.me/33781583101" target="_blank" rel="noopener noreferrer" class="btn-white">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.554 4.103 1.523 5.824L.057 23.857a.5.5 0 0 0 .614.614l6.033-1.466A11.944 11.944 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.846 0-3.574-.49-5.063-1.345l-.363-.21-3.763.914.932-3.642-.23-.374A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+    <span data-lang="pt">Falar no WhatsApp</span>
+    <span data-lang="fr">Contacter sur WhatsApp</span>
+  </a>
+  <p class="cta-note" data-lang="pt">Prefere email? <a href="mailto:rikodevstudio@gmail.com">rikodevstudio@gmail.com</a></p>
+  <p class="cta-note" data-lang="fr">Email? <a href="mailto:rikodevstudio@gmail.com">rikodevstudio@gmail.com</a></p>
+</section>
+
+</main>
+
+<footer role="contentinfo">
+  <div class="container">
+    <div class="footer-brand">Riko<span style="color:var(--orange)">.</span>Dev Studio</div>
+    <p class="footer-text">
+      Valence (26000), Drome, France<br>
+      <a href="mailto:rikodevstudio@gmail.com">rikodevstudio@gmail.com</a> &middot;
+      <a href="https://wa.me/33781583101">+33 07 81 58 31 01</a><br>
+      Developpeur web freelance &mdash; Valence &middot; Romans-sur-Isere &middot; Drome &middot; Ardeche
+    </p>
+    <p class="footer-text" style="margin-top:.75rem">
+      &copy; 2025 Riko Dev Studio &middot; <a href="privacidade.html">Politique de confidentialite</a>
+    </p>
+  </div>
+</footer>
+
+<!-- Banner de cookies -->
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-label="Cookies" aria-live="polite">
+  <div class="cookie-text">
+    <p data-lang="pt">Este site usa cookies essenciais para funcionar. <a href="privacidade.html">Política de privacidade</a></p>
+    <p data-lang="fr">Ce site utilise des cookies essentiels. <a href="privacidade.html">Politique de confidentialité</a></p>
+  </div>
+  <div class="cookie-actions">
+    <button class="cookie-btn cookie-accept" onclick="acceptCookies()">
+      <span data-lang="pt">Aceitar</span>
+      <span data-lang="fr">Accepter</span>
+    </button>
+    <button class="cookie-btn cookie-decline" onclick="declineCookies()">
+      <span data-lang="pt">Só essenciais</span>
+      <span data-lang="fr">Essentiels seulement</span>
+    </button>
+  </div>
+</div>
+
+<!-- Scroll to top -->
+<button class="scroll-top" id="scrollTop" aria-label="Voltar ao topo" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <polyline points="18 15 12 9 6 15"/>
+  </svg>
+</button>
+
+<!-- WhatsApp fixo -->
+<a href="https://wa.me/33781583101" class="wa-float" target="_blank" rel="noopener noreferrer" aria-label="Abrir WhatsApp (botao flutuante)">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.554 4.103 1.523 5.824L.057 23.857a.5.5 0 0 0 .614.614l6.033-1.466A11.944 11.944 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.846 0-3.574-.49-5.063-1.345l-.363-.21-3.763.914.932-3.642-.23-.374A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+</a>
+
+<script src="assets/js/script.js" defer></script>
+</body>
+</html>
