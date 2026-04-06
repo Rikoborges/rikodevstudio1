@@ -9,9 +9,9 @@
   <link rel="canonical" href="https://rikodevstudio.com/privacidade.html" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg" />
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
-  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
   <link rel="stylesheet" href="assets/css/style.css" />
   <style>
     .priv-hero {
@@ -322,31 +322,13 @@
 
 </div>
 
+<!-- Botão voltar no fundo -->
+<div style="max-width:760px;margin:0 auto;padding:0 1.5rem 3rem">
+  <a href="index.html" class="back-link">← <span data-lang="fr">Retour au site</span><span data-lang="pt">Voltar ao site</span></a>
+</div>
+
 <!-- FOOTER simples -->
 <footer role="contentinfo">
   <div class="container">
     <div class="footer-brand">Riko<span style="color:var(--orange)">.</span>Dev Studio</div>
-    <p class="footer-text">
-      &copy; 2025 Riko Dev Studio &middot; Valence, France &middot · <a href="mailto:rikodevstudio@gmail.com">rikodevstudio@gmail.com</a>
-    </p>
-  </div>
-</footer>
-
-<script>
-function setPrivLang(l) {
-  const pt = l === 'pt';
-  document.body.classList.toggle('pt', pt);
-  document.documentElement.lang = l;
-  document.getElementById('btn-fr').classList.toggle('active', !pt);
-  document.getElementById('btn-pt').classList.toggle('active', pt);
-  document.getElementById('hero-btn-fr').classList.toggle('active', !pt);
-  document.getElementById('hero-btn-pt').classList.toggle('active', pt);
-  document.title = pt
-    ? 'Politica de Privacidade | Riko Dev Studio'
-    : 'Politique de confidentialite | Riko Dev Studio';
-}
-if ((navigator.language || '').startsWith('pt')) setPrivLang('pt');
-else setPrivLang('fr');
-</script>
-</body>
-</html>
+    <p clas
