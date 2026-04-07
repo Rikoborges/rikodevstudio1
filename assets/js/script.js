@@ -4,6 +4,29 @@
    carrossel swipe, FAQ acordeão, formulário async
    ══════════════════════════════════════════════ */
 
+/* ── REVEAL — roda primeiro para garantir visibilidade ──────────
+   Safety net: se qualquer outro código falhar, os elementos
+   ficam visíveis após 800ms em vez de ficarem opacity:0.
+   ─────────────────────────────────────────────────────────────── */
+(function() {
+  function showAll() {
+    document.querySelectorAll('.reveal:not(.visible)').forEach(function(el) {
+      el.classList.add('visible');
+    });
+  }
+  if ('IntersectionObserver' in window) {
+    var ro = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) {
+        if (e.isIntersecting) { e.target.classList.add('visible'); ro.unobserve(e.target); }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(function(el) { ro.observe(el); });
+  } else {
+    showAll(); // browser sem IntersectionObserver → mostra tudo
+  }
+  setTimeout(showAll, 800); // safety net: garante visibilidade mesmo com erros JS
+})();
+
 /* ── TOGGLE PT / FR ──────────────────────────
    Muda o idioma de toda a página.
    Chamado pelos botões PT e FR no topbar.
@@ -47,7 +70,7 @@ function setLang(l) {
   // swipe hint conteúdo já muda via data-lang no HTML
 
   // Guarda preferência para outras páginas (privacidade.html)
-  sessionStorage.setItem('lang', l);
+  try { sessionStorage.setItem('lang', l); } catch(_) {}
 
   // GA4: track language switch
   if (typeof gtag !== 'undefined') {
@@ -316,11 +339,3 @@ if ((navigator.language || '').startsWith('fr')) {
   setLang('fr');
 }
 
-/* ── REVEAL (IntersectionObserver) ──────────
-   Substitui animation-timeline:view() que
-   falha silenciosamente no Android Chrome.
-   ─────────────────────────────────────────── */
-const revealObserver = new IntersectionObserver(entries => {
-  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObserver.unobserve(e.target); } });
-}, { threshold: 0.1 });
-document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
