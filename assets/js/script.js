@@ -45,8 +45,8 @@ function setLang(l) {
   const h1 = document.getElementById('hero-title');
   if (h1) {
     h1.innerHTML = fr
-      ? "Votre business m&eacute;rite <em>d&apos;&ecirc;tre visible.</em>"
-      : "Seu neg&oacute;cio merece <em>ser visto.</em>";
+      ? "Je vous aide &agrave; mettre votre activit&eacute; en ligne et &agrave; attirer <em>des clients tous les jours</em>"
+      : "Eu te ajudo a colocar seu neg&oacute;cio na internet e atrair <em>clientes todos os dias</em>";
   }
 
   // hidden input do formulário
@@ -333,9 +333,12 @@ window.addEventListener('scroll', () => {
 
 
 /* ── AUTO-DETECT IDIOMA ──────────────────────
-   Se o browser estiver em francês, activa FR.
+   1. Parâmetro URL (?lang=fr | ?lang=pt)
+   2. Browser em francês → FR
    ─────────────────────────────────────────── */
-if ((navigator.language || '').startsWith('fr')) {
-  setLang('fr');
-}
+(function () {
+  const p = new URLSearchParams(window.location.search).get('lang');
+  if (p === 'fr' || p === 'pt') { setLang(p); }
+  else if ((navigator.language || '').startsWith('fr')) { setLang('fr'); }
+})();
 

@@ -562,3 +562,122 @@ body.fr span[data-lang="fr"] { display: inline; }
   .hero { padding: 7rem 3rem 4rem; }
   section { padding: 5rem 3rem; }
 }
+
+
+/* ══════════════════════════════════════════════
+   HERO VISUAL — Cards flutuantes (desktop)
+   ══════════════════════════════════════════════ */
+.hero-visual { display: none; }
+
+@media (min-width: 1100px) {
+  .hero { flex-direction: row; align-items: center; gap: clamp(2rem, 4vw, 5rem); }
+  .hero-inner { max-width: 520px; flex-shrink: 0; }
+  .hero-visual {
+    display: block;
+    flex: 0 0 290px;
+    position: relative;
+    height: 340px;
+  }
+}
+
+@keyframes hvcIn {
+  from { opacity: 0; transform: translateY(22px) scale(.96); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+@keyframes hvf1 { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
+@keyframes hvf2 { 0%,100%{transform:translateY(-4px)} 50%{transform:translateY(-12px)} }
+@keyframes hvf3 { 0%,100%{transform:translateY(-2px)} 50%{transform:translateY(-9px)} }
+
+.hv-card {
+  position: absolute;
+  background: #fff;
+  border-radius: 16px;
+  padding: .85rem 1rem;
+  width: 248px;
+  box-shadow: 0 12px 36px rgba(0,0,0,.22), 0 2px 8px rgba(0,0,0,.1);
+  opacity: 0;
+}
+.hv-wa    { top: 0;     left: 0;   animation: hvcIn .5s ease .3s  both, hvf1 5s ease-in-out 1s infinite; }
+.hv-google{ top: 118px; left: 38px;animation: hvcIn .5s ease .75s both, hvf2 6s ease-in-out 1s infinite; }
+.hv-stats { top: 236px; left: 10px;animation: hvcIn .5s ease 1.2s both, hvf3 7s ease-in-out 1s infinite; }
+
+/* Card WA */
+.hvc-wa-head { display: flex; align-items: center; gap: .5rem; margin-bottom: .5rem; }
+.hvc-wa-icon { width: 28px; height: 28px; flex-shrink: 0; }
+.hvc-wa-name { font-size: .78rem; font-weight: 700; color: #111; }
+.hvc-wa-time { font-size: .68rem; color: #888; }
+.hvc-wa-dot  { width: 8px; height: 8px; border-radius: 50%; background: #25D366; margin-left: auto; flex-shrink: 0; }
+.hvc-wa-msg  { font-size: .8rem; color: #222; background: #f0fdf4; border-radius: 8px; padding: .4rem .6rem; }
+
+/* Card Google */
+.hvc-g-bar   { display: flex; align-items: center; gap: 4px; margin-bottom: .45rem; }
+.hvc-gd      { width: 10px; height: 10px; border-radius: 50%; }
+.hvc-gd.r    { background: #ef4444; }
+.hvc-gd.y    { background: #f59e0b; }
+.hvc-gd.g    { background: #22c55e; }
+.hvc-g-url   { font-size: .65rem; color: #888; margin-left: 4px; }
+.hvc-g-title { font-size: .82rem; font-weight: 700; color: #1a1aff; margin-bottom: .15rem; }
+.hvc-g-link  { font-size: .68rem; color: #166534; margin-bottom: .2rem; }
+.hvc-g-stars { font-size: .72rem; color: #555; }
+.hvc-g-stars span { color: #f59e0b; }
+
+/* Card Stats */
+.hvc-s-lbl  { font-size: .72rem; color: #666; margin-bottom: .2rem; }
+.hvc-s-num  { font-size: 1.4rem; font-weight: 800; color: #111; margin-bottom: .5rem; }
+.hvc-s-arrow{ color: #22c55e; }
+.hvc-bars   { display: flex; align-items: flex-end; gap: 4px; height: 36px; }
+.hvc-bar    { flex: 1; background: #e5e7eb; border-radius: 3px 3px 0 0; min-height: 4px; }
+.hvc-bar-hi { background: #22c55e; }
+
+
+/* ══════════════════════════════════════════════
+   IDENTIFICAÇÃO — É para você?
+   ══════════════════════════════════════════════ */
+.identif { background: var(--cream-dark); padding: 3rem 1.5rem; }
+.identif-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem auto 0;
+  max-width: 680px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.identif-item {
+  display: flex;
+  align-items: flex-start;
+  gap: .75rem;
+  font-size: 1rem;
+  color: var(--navy);
+  line-height: 1.5;
+}
+.identif-check {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  background: var(--orange);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: .75rem;
+  font-weight: 700;
+  margin-top: .1rem;
+}
+
+
+/* ══════════════════════════════════════════════
+   DEPOIMENTOS — Badge de resultado
+   ══════════════════════════════════════════════ */
+.depo-result {
+  display: inline-block;
+  margin-top: .75rem;
+  background: #f0fdf4;
+  color: #166534;
+  border: 1px solid #bbf7d0;
+  border-radius: 999px;
+  padding: .25rem .75rem;
+  font-size: .75rem;
+  font-weight: 600;
+}
