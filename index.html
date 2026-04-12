@@ -7,6 +7,12 @@
   <meta name="description" content="Desenvolvedor web freelance em Valence, França. Sites modernos, rápidos e de alta conversão para pequenos negócios no Brasil e Europa. Orçamento grátis em 48h." />
   <meta name="keywords" content="criacao de site, desenvolvedor web, site para pequeno negocio, site profissional Brasil, criacao site web Valence, développeur web Valence, site internet Drôme" />
   <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#1a1a2e" />
+  <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="//fonts.gstatic.com" />
+  <link rel="dns-prefetch" href="//wa.me" />
+  <link rel="dns-prefetch" href="//formspree.io" />
+  <link rel="dns-prefetch" href="//www.googletagmanager.com" />
   <link rel="canonical" href="https://rikodevstudio.com/" />
   <meta name="geo.region" content="FR-26" />
   <meta name="geo.placename" content="Valence, Drôme, France" />
@@ -27,19 +33,12 @@
 <link rel="sitemap" type="application/xml" href="https://rikodevstudio.com/sitemap.xml" />
 <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg" />
 <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
+  <link rel="preload" as="image" href="assets/images/riko.jpg" fetchpriority="high" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&family=Outfit:wght@300;400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
   <noscript><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" /></noscript>
   <link rel="stylesheet" href="assets/css/style.css" />
-  <!-- Google Analytics 4 — substitui G-XXXXXXXXXX pelo ID real -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX', { page_path: window.location.pathname });
-  </script>
 </head>
 <body>
 
@@ -457,7 +456,7 @@
     <div class="sobre-grid">
       <div class="avatar-wrap reveal">
         <div class="avatar">
-          <img src="assets/images/riko.jpg" alt="Riko Dev freelance Valence" loading="lazy" width="1080" height="1440" onerror="this.style.display='none'" />
+          <img src="assets/images/riko.jpg" alt="Riko Dev freelance Valence" fetchpriority="high" width="1080" height="1440" onerror="this.style.display='none'" />
         </div>
         <div class="stats-grid">
           <div class="stat"><div class="stat-num">5+</div><div class="stat-label" data-lang="pt">Projetos</div><div class="stat-label" data-lang="fr">Projets</div></div>
@@ -676,5 +675,19 @@
 </a>
 
 <script src="assets/js/script.js" defer></script>
+<!-- Google Analytics 4 — substitui G-XXXXXXXXXX pelo teu ID real -->
+<script>
+  window.addEventListener('load', function() {
+    var s = document.createElement('script');
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX';
+    s.async = true;
+    document.head.appendChild(s);
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    window.gtag = gtag;
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  });
+</script>
 </body>
 </html>
