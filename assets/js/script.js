@@ -338,7 +338,9 @@ window.addEventListener('scroll', () => {
    ─────────────────────────────────────────── */
 (function () {
   const p = new URLSearchParams(window.location.search).get('lang');
+  const saved = (() => { try { return sessionStorage.getItem('lang'); } catch(_) { return null; } })();
   if (p === 'fr' || p === 'pt') { setLang(p); }
-  else if ((navigator.language || '').startsWith('fr')) { setLang('fr'); }
+  else if (saved === 'pt') { setLang('pt'); }
+  else { setLang('fr'); }
 })();
 
