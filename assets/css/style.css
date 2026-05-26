@@ -404,6 +404,18 @@ footer { background: var(--navy); padding: 2rem 1.5rem; text-align: center; }
 .footer-brand { font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 1rem; color: #fff; margin-bottom: .5rem; }
 .footer-text { font-size: .82rem; color: #8a9ab0; line-height: 1.8; }
 .footer-text a { color: #b8c0cc; }
+.footer-legal {
+  font-size: .72rem;
+  color: #576475;
+  line-height: 1.7;
+  margin-top: 1.25rem;
+  padding-top: .75rem;
+  border-top: 1px solid rgba(255,255,255,.06);
+  word-break: break-word;
+}
+@media (max-width: 480px) {
+  .footer-legal { font-size: .68rem; }
+}
 
 /* ── COOKIE BANNER ── */
 .cookie-banner {
