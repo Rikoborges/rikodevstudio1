@@ -164,6 +164,21 @@ section { padding: 4.5rem 1.5rem; }
 .pc-link { display: inline-flex; align-items: center; gap: .4rem; font-size: .85rem; font-weight: 600; color: var(--navy); border-bottom: 1.5px solid var(--orange); padding-bottom: 1px; transition: var(--t); align-self: flex-start; }
 .pc-link:hover { color: var(--orange); gap: .7rem; }
 
+/* Featured card */
+.pc-featured { border: 2px solid var(--orange); position: relative; }
+.pc-featured-badge { position: absolute; top: .75rem; left: .75rem; background: var(--orange); color: #fff; font-size: .7rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: .25rem .6rem; border-radius: 99px; z-index: 2; }
+
+/* Marquee strip */
+.mais-projetos { margin-top: 3rem; overflow: hidden; }
+.marquee-wrap { overflow: hidden; mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%); }
+.marquee-track { display: flex; gap: 1rem; width: max-content; animation: marquee 28s linear infinite; }
+.marquee-wrap:hover .marquee-track { animation-play-state: paused; }
+@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.mq-item { display: inline-flex; align-items: center; gap: .5rem; padding: .55rem 1.1rem; background: var(--cream); border: 1px solid rgba(26,26,46,.1); border-radius: 99px; white-space: nowrap; font-size: .85rem; font-weight: 600; color: var(--navy); text-decoration: none; transition: var(--t); flex-shrink: 0; }
+.mq-item:hover { background: var(--orange); color: #fff; border-color: var(--orange); }
+.mq-item:hover .mq-tag { color: rgba(255,255,255,.8); }
+.mq-tag { font-size: .75rem; font-weight: 400; color: var(--gray); }
+
 
 /* ── DEPOIMENTOS ── */
 .depos { background: var(--navy); }
